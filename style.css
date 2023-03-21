@@ -1,0 +1,439 @@
+html, body{
+    height: 100vh;
+}
+/*maquetacion*/
+
+.main-body{
+    background-color: #f3f5f7;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 30% 30% 30%;
+    grid-template-areas: "header header"
+    "section1 section2"
+    "section3 section2"
+    "section4 section2";
+    
+}
+
+.academic-body{
+    
+    font-family: 'Quicksand', sans-serif;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(234,244,255,1) 100%);
+    margin: 0px;
+    
+   
+
+
+}
+
+header{
+    grid-area: header;
+}
+
+.section1{
+    grid-area: section1;
+}
+
+.section2{
+    grid-area: section2;
+}
+
+.section3{
+    grid-area: section3;
+}
+
+.section4{
+    grid-area: section4;
+}
+
+/*Estilos imagen*/
+
+.section2 img{
+    margin-top: 20px;
+    width:100%;
+    height: 100%;
+    border-radius: 100px;
+}
+
+/*estilos menu*/
+
+header{
+    display: flex; /* este codugo posiiona el menu y el h1 como fila*/
+    flex-direction: row;
+    justify-content: space-between; /* noota: el h1 y la lista son contenedores independiente, de esta forma se pueden separa aplicando justify-content*/
+    color: white;
+    /*background-color: #b6f1f10;*/
+    border-radius: 15px;
+    background-color: #d173af;
+    background-size: 100%;
+    
+}
+
+
+
+header ul {
+    display: flex; /* este codigo posiciona el listado menu como una fila*/
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    
+
+    
+    
+}
+
+/* modifica solo el contenido de la lista dando margen para separar los link del menu*/
+header ul li{
+    margin: 10px;
+}
+
+/*section 3  y section 4 mejorar el espaciado de los elementos*/
+
+.section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.section4{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 26%;
+}
+
+
+/* estilizando el butonbutton*/
+
+button{ background-color: #843fad;
+    border-radius: 5px;
+    
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+/*backgroud-image*/
+.main-body{
+    background-image: url(images/back-aux.jpg);
+}
+
+.section4 a {
+    color: rgb(33, 33, 180);
+
+}
+.section4 a:hover {
+    background-color: #6e2052;
+    border-radius: 10px;
+    color: white;
+}
+
+
+/*css formacion*/
+article .logo-udc{
+    width: 20%;
+    height: 20%;
+}
+
+
+article .logo-uasd{
+    width: 10%;
+    height: 10%;}
+
+    /*eliminar link visitados dese css*/
+a {color: white; 
+    text-decoration: none}         /* Unvisited link  */
+a:visited {color: white;} /* Visited link    */
+a:hover {color: black;}
+
+   /* Mouse over link */
+a:active {color: white;}
+
+
+/*configuracion pagina experiencia*/
+.cotenedor-experiencia{
+    background-color: #f3f5f7;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10% 18% 18% 18% 18% 18% 18% 18% 18% 18% 18% 18% ;
+    grid-template-areas: "title-experiencia title-experiencia"
+    "experiencia-1a experiencia-1b"
+    "experiencia-2a experiencia-2b"
+    "experiencia-3a experiencia-3b"
+    "experiencia-4a experiencia-4b"
+    "experiencia-5a experiencia-5b"
+    "experiencia-6a experiencia-6b"
+    "experiencia-7a experiencia-7b"
+    "experiencia-8a experiencia-8b"
+    "experiencia-9a experiencia-9b"
+    "experiencia-10a experiencia-10b"
+    "experiencia-11a experiencia-11b"
+    
+}
+.title-experiencia{
+    grid-area: title-experiencia;
+}
+
+.experiencia-1a{
+    grid-area: experiencia-1a;
+}
+
+.experiencia-1b{
+    grid-area: experiencia-1b;
+
+}
+
+
+
+.experiencia-2a{
+    grid-area: experiencia-2a;
+}
+
+.experiencia-2b{
+    grid-area: experiencia-2b;
+
+}
+
+
+.experiencia-3a{
+    grid-area: experiencia-3a;
+}
+
+
+.experiencia-3b{
+    grid-area: experiencia-3b;}
+
+
+.experiencia-4a{
+    grid-area: experiencia-4a;
+}
+
+.experiencia-4b{
+    grid-area: experiencia-4b;
+    }
+
+
+
+.experiencia-5a{
+    grid-area: experiencia-5a;
+}
+
+.experiencia-5b{
+    grid-area: experiencia-5b;}
+
+
+
+.experiencia-6a{
+    grid-area: experiencia-6a;
+}
+
+.experiencia-6b{
+    grid-area: experiencia-6b;}
+
+
+
+.experiencia-7a{
+    grid-area: experiencia-7a;
+}
+
+.experiencia-7b{
+    grid-area: experiencia-7b;
+
+}
+
+
+.experiencia-8a{
+    grid-area: experiencia-8a;
+}
+
+
+.experiencia-8b{
+    grid-area: experiencia-8b;
+
+}
+
+.experiencia-9a{
+    grid-area: experiencia-9a;
+}
+
+
+.experiencia-9b{
+    grid-area: experiencia-9b;
+ 
+}
+
+
+.experiencia-10a{
+    grid-area: experiencia-10a;
+}
+
+
+.experiencia-10b{
+    grid-area: experiencia-10b;
+
+}
+
+.experiencia-11a{
+    grid-area: experiencia-11a;
+}
+
+
+.experiencia-11b{
+    grid-area: experiencia-11b;
+
+}
+
+
+.title-experiencia{
+    margin-bottom: 20%;
+    
+}
+
+
+.experiencia-1b{
+    display: block;
+}
+
+
+.title-experiencia{
+    display: flex;
+    justify-content: CENTER;
+    margin-top: 20px;
+}
+
+/* css de la pagina de contacto*/
+
+#contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1/2fr 1 1/2fr 2fr;
+    grid-template-areas: "contact-title contact-title contact-title"
+    "adress phone email"
+    "footer footer footer ";}
+   
+
+
+
+.contact-title{
+grid-area: contact-title;
+}
+
+
+.adress{
+    grid-area: adress;
+}
+
+.phone{
+    grid-area: phone;
+}
+
+.email{
+    grid-area: email;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #3d4045 ;
+}
+
+
+#contact-container .contact-title{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#contact-container .adress{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+
+/*css de habilidades*/
+
+.skills-body > .habilidades{
+    width: 800px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+
+}
+
+
+.skills-body > .habilidades > .container{
+    width: 100%;
+    background-color: #ddd;
+}
+
+
+
+.skills-body > .habilidades > .container > .skills {
+    text-align: right;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+/*nimatio of each element skill*/
+
+.skills-body > .habilidades > .container > .hplc{
+    background-color: #04aa6d;
+    animation: fillhplc 2s  forwards;
+
+}
+@keyframes fillhplc{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+/*nimatio of each element skill*/
+
+.skills-body > .habilidades > .container > .uv{
+    background-color: #04aa6d;
+    animation: filluv 2s  forwards;
+
+}
+@keyframes filluv{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+
+/*nimatio of each element skill*/
+
+.skills-body > .habilidades > .container > .Estabilidad{
+    background-color: #04aa6d;
+    animation: fillEstabilidad 2s  forwards;
+
+}
+@keyframes fillEstabilidad{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+
+/*nimatio of each element skill*/
+
+.skills-body > .habilidades > .container > .Validacion{
+    background-color: #04aa6d;
+    animation: fillValidacion 2s  forwards;
+
+}
+@keyframes fillValidacion{
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+
+
