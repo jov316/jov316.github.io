@@ -313,7 +313,7 @@ a:active {color: white;}
 #contact-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1/2fr 1 1/2fr 2fr;
+    grid-template-rows: 1/2fr 1 1/2fr auto;
     grid-template-areas: "contact-title contact-title contact-title"
     "adress phone email"
     "footer footer footer ";}
